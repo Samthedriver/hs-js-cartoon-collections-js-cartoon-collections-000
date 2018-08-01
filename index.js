@@ -13,18 +13,37 @@ function dwarfRollCall(dwarves) {
 
 function summonCaptainPlanet(planeteerCalls){
 
-  var LoudCalls = []; //LoudCallsis the array that will contain the planeteer calls in all cuppercase followed by an exclamation
+  var LoudCalls = []; //LoudCalls is the array that will contain the planeteer calls in all cuppercase followed by an exclamation
 
-  //this for loop will parse through the array planeteerCalls and convert each call to all uppercse using the toUpperCase function
+  //this for loop will parse through the array planeteerCalls and convert each call to all uppercase using the toUpperCase function
   for (var c = 0; c < planeteerCalls.length; c++){
     LoudCalls[c] = planeteerCalls[c].toUpperCase() + "! ";
   }
   return LoudCalls //returning an array of each planeteer call in all upper case followed by an exclamation
+//=======
+//  var RollCallList = [];
+//  var ListNumber = 0;
+
+//  for (var d = 0; d < dwarves.length; d++) {
+//    ListNumber = d + 1;
+//    RollCallList +=  ListNumber + ". " + dwarves[d] + " ";
+//  }
+//  return RollCallList
 }
+
+//function summonCaptainPlanet(planeteerCalls){
+//  var LoudCalls = [];
+
+//  for (var c = 0; c < planeteerCalls.length; c++){
+//    LoudCalls[c] = planeteerCalls[c].toUpperCase() + "! ";
+//  }
+//  return LoudCalls
+//>>>>>>> a1da2ff2a47d346bbba0114fc9c77036e6770a84
+//}
 
 function longPlaneteerCalls(words) {
 
-  //this for loop parses through the array words and uses the if condition to determine if a word if greater than 4 characters
+  //this for loop parses through the array words and uses the if condition to determine if a word is greater than 4 characters
   for (var w = 0; w < words.length; w++){
     if (words.length > 4)
       return true
